@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Appointments | CarePlus Clinic Demo</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> <span>CarePlus</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Inner Header -->
+    <header class="inner-header">
+        <div class="container reveal">
+            <h1>Contact & Appointment</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Contact</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact & Form Section -->
+    <section class="section-padding bg-light">
+        <div class="container contact-grid">
+            
+            <div class="contact-info reveal-left">
+                <h2 class="section-title" style="text-align:left; font-size:2rem;">Get in Touch</h2>
+                <p style="color:var(--text-muted); margin-bottom:2rem; line-height:1.6;">Have a question or want to book an appointment? We are here to help. Contact us using the details below or fill out the appointment form.</p>
+                
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Durgapur, West Bengal, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Phone Number</h4>
+                            <p>+91 8389981668</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p>contact@careplus.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Sunday: 24/7 Hours<br>Emergency services available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container reveal-right">
+                <h3 style="font-family:'Outfit', sans-serif; font-size:1.8rem; color:var(--primary-color); margin-bottom:1.5rem;">Book an Appointment</h3>
+                <form id="demo-contact-form">
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                    </div>
+                    
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="date">Preferred Date *</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="service">Department / Service</label>
+                        <select id="service" class="form-control">
+                            <option value="">Select a Department</option>
+                            <option value="General">General Checkup</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Dental">Dental Care</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="message">Additional Notes</label>
+                        <textarea id="message" class="form-control" placeholder="Briefly describe your medical concern..."></textarea>
+                    </div>
+
+                    <div class="form-note" style="margin-bottom:1.5rem; color:var(--text-muted);">
+                        <i class="fa-solid fa-id-card" style="color:var(--secondary-color);"></i> Please bring a valid ID proof during your visit.
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.1rem; padding:16px;">Confirm Appointment</button>
+                    
+                    <div class="form-note" style="justify-content:center; margin-top:1.5rem; color:#ff6b6b; font-weight:600;">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Form is for demo purposes. No real data is submitted.
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="demo-disclaimer">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>IMPORTANT:</strong> This is a demo website created for design and development purposes only. This clinic is not real. Do not submit any real personal or medical information.</p>
+            </div>
+            
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-heart-pulse"></i> CarePlus
+                    </div>
+                    <p class="footer-desc">Providing premium, advanced, and compassionate healthcare services. Your health is our top priority.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Cardiology</a></li>
+                        <li><a href="services.html">Dental Care</a></li>
+                        <li><a href="services.html">Neurology</a></li>
+                        <li><a href="services.html">Orthopedics</a></li>
+                        <li><a href="services.html">Pediatrics</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li style="color:#8892b0; margin-bottom:1rem;"><i class="fa-solid fa-location-dot" style="color:var(--accent-color); margin-right:10px;"></i> Durgapur, West Bengal, India</li>
+                        <li style="margin-bottom:1rem;"><a href="tel:+918389981668"><i class="fa-solid fa-phone" style="color:var(--accent-color); margin-right:10px;"></i> +91 8389981668</a></li>
+                        <li><a href="mailto:contact@careplus.com"><i class="fa-solid fa-envelope" style="color:var(--accent-color); margin-right:10px;"></i> contact@careplus.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CarePlus Clinic Demo. All rights reserved. Designed for presentation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal Popup -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-icon"><i class="fa-solid fa-check"></i></div>
+            <h3>Request Received!</h3>
+            <p>This is a demo form. No data has been submitted, but your UI interaction was successful.</p>
+            <button class="btn btn-secondary" id="close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
